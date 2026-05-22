@@ -1,79 +1,179 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #0f0f0f;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#fff5f0;
+    color:#222;
 }
 
 /* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("images/festival.jpg");
-    background-size: cover;
-    background-position: center;
+.hero{
+    height:100vh;
+    background:url('images/festival.jpg') center/cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-h1 {
-    font-size: 60px;
+.hero-overlay{
+    background:rgba(0,0,0,0.4);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
 }
 
-p {
-    font-size: 18px;
+.hero h1{
+    font-size:60px;
+    color:#ffdd57;
 }
 
-/* BOUTON */
-.btn {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: orange;
-    color: black;
-    text-decoration: none;
-    border-radius: 10px;
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:linear-gradient(45deg,#ff4d6d,#ffb703);
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
 }
 
-/* SECTIONS */
-section {
-    padding: 60px;
-    text-align: center;
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+    background:#ff4d6d;
 }
 
-/* GRID */
-.grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* CONTAINERS */
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.section{
+    padding:80px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#ff4d6d;
 }
 
 /* CARDS */
-.card {
-    background: #1e1e1e;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
+/* PROGRAM */
+.colorful{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
 }
 
-/* GALERIE IMAGES */
-#galerie img {
-    width: 250px;
-    border-radius: 10px;
+.grid{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    width:250px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ARTISTS */
+.grid-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.artist{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.artist img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* GALLERY */
+.colorful2{
+    background:linear-gradient(135deg,#a1c4fd,#c2e9fb);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* TICKETS */
+.ticket{
+    text-align:center;
+}
+
+.ticket-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    display:inline-block;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.ticket-box span{
+    font-size:40px;
+    display:block;
+    margin:20px 0;
+    color:#ff4d6d;
+}
+
+button{
+    background:linear-gradient(45deg,#ff4d6d,#ffb703);
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    color:white;
+    cursor:pointer;
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    margin-top: 40px;
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ff4d6d;
+    color:white;
 }
