@@ -1,62 +1,67 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Francofolies de La Rochelle</title>
 
-        <div class="artists-grid">
+    <!-- LIEN CSS IMPORTANT -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <div class="artist-card">
-                <img src="images/angele.jpg" alt="Angèle">
-                <h3>Angèle</h3>
-                <p>Pop belge moderne et solaire.</p>
-            </div>
+<body>
 
-            <div class="artist-card">
-                <img src="images/orelsan.jpg" alt="Orelsan">
-                <h3>Orelsan</h3>
-                <p>Un des plus grands artistes français.</p>
-            </div>
+<header class="hero">
+    <h1>Francofolies de La Rochelle</h1>
+    <p>Le festival incontournable de l’été</p>
 
-            <div class="artist-card">
-                <img src="images/clara.jpg" alt="Clara Luciani">
-                <h3>Clara Luciani</h3>
-                <p>Voix élégante et univers rétro.</p>
-            </div>
+    <a class="btn" href="#artistes">Voir les artistes</a>
+</header>
 
-            <div class="artist-card">
-                <img src="images/damso.jpg" alt="Damso">
-                <h3>Damso</h3>
-                <p>Rap puissant et ambiance nocturne.</p>
-            </div>
+<section id="apropos">
+    <h2>À propos</h2>
+    <p>
+        Les Francofolies de La Rochelle est un festival de musique emblématique
+        qui rassemble chaque été des artistes français et internationaux.
+    </p>
+</section>
 
+<section id="artistes">
+    <h2>Artistes</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="images/angele.jpg" alt="Angèle">
+            <h3>Angèle</h3>
         </div>
-    </section>
 
-
-    <section id="galerie" class="section">
-        <h2>Galerie</h2>
-
-        <div class="gallery">
-            <img src="images/concert1.jpg" alt="Concert">
-            <img src="images/concert2.jpg" alt="Festival">
-            <img src="images/concert3.jpg" alt="Public">
-            <img src="images/concert4.jpg" alt="Scène">
+        <div class="card">
+            <img src="images/orelsan.jpg" alt="Orelsan">
+            <h3>Orelsan</h3>
         </div>
-    </section>
 
-
-    <section id="tickets" class="section tickets">
-        <h2>Billetterie</h2>
-
-        <div class="ticket-box">
-            <h3>Pass 3 jours</h3>
-            <p class="price">129€</p>
-            <p>Accès à tous les concerts</p>
-            <button>Acheter</button>
+        <div class="card">
+            <img src="images/clara.jpg" alt="Clara Luciani">
+            <h3>Clara Luciani</h3>
         </div>
-    </section>
 
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 - Projet étudiant EFAP Bordeaux</p>
-    </footer>
+<section id="galerie">
+    <h2>Galerie</h2>
+
+    <div class="grid">
+        <img src="images/concert1.jpg">
+        <img src="images/concert2.jpg">
+        <img src="images/concert3.jpg">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Francofolies - projet étudiant</p>
+</footer>
 
 </body>
 </html>
