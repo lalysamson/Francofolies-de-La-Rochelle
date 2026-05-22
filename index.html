@@ -6,94 +6,95 @@
     <title>Francofolies de La Rochelle</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="hero">
-    <div class="hero-overlay">
-        <h1>Les Francofolies</h1>
-        <p>La Rochelle • Festival d’été • Musique & soleil</p>
-        <a href="#program" class="btn">Voir la programmation</a>
-    </div>
-</header>
-
+<!-- NAV -->
 <nav class="nav">
-    <a href="#apropos">À propos</a>
-    <a href="#program">Programme</a>
-    <a href="#artistes">Artistes</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#tickets">Billetterie</a>
+    <h1>Francofolies</h1>
+    <div>
+        <a href="#apropos">À propos</a>
+        <a href="#program">Programme</a>
+        <a href="#artistes">Artistes</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tickets">Billetterie</a>
+    </div>
 </nav>
 
+<!-- HERO VIDEO -->
+<header class="hero">
+
+    <video autoplay muted loop class="video-bg">
+        <source src="videos/festival.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1>Les Francofolies</h1>
+        <p>La Rochelle • Festival d’été • Musique & soleil</p>
+        <a href="#program" class="btn">Découvrir</a>
+    </div>
+
+</header>
+
+<!-- À PROPOS -->
 <section id="apropos" class="section">
-    <div class="container">
-        <h2>☀️ À propos du festival</h2>
-        <div class="card">
-            <p>
-                Les Francofolies de La Rochelle sont un festival majeur de la scène musicale française.
-                Chaque été, des milliers de festivaliers se retrouvent pour célébrer la musique en plein air,
-                dans une ambiance festive, colorée et unique en bord de mer.
-            </p>
-            <p>
-                Créé en 1985, le festival mélange pop, rap, électro et variété française.
-            </p>
-        </div>
+    <div class="container card">
+        <h2>☀️ À propos</h2>
+        <p>
+            Les Francofolies de La Rochelle sont un festival de musique emblématique
+            qui rassemble chaque été des milliers de festivaliers.
+        </p>
     </div>
 </section>
 
+<!-- PROGRAMME -->
 <section id="program" class="section colorful">
     <div class="container">
         <h2>🎤 Programmation</h2>
 
         <div class="grid">
-            <div class="box">
-                <h3>Vendredi</h3>
-                <p>Angèle • Clara Luciani • Damso</p>
-            </div>
-
-            <div class="box">
-                <h3>Samedi</h3>
-                <p>Orelsan • Bigflo & Oli • Ninho</p>
-            </div>
-
-            <div class="box">
-                <h3>Dimanche</h3>
-                <p>Vianney • Jain • DJ sets électro</p>
-            </div>
+            <div class="box">Vendredi<br>Angèle • Damso</div>
+            <div class="box">Samedi<br>Orelsan • Ninho</div>
+            <div class="box">Dimanche<br>Clara Luciani • Vianney</div>
         </div>
     </div>
 </section>
 
+<!-- ARTISTES -->
 <section id="artistes" class="section">
     <div class="container">
-        <h2>🌴 Artistes à l’affiche</h2>
+        <h2>🌴 Artistes</h2>
 
         <div class="grid-cards">
+
             <div class="artist">
-                <img src="images/angele.jpg">
+                <img src="images/angele.jpg" alt="Angèle">
                 <h3>Angèle</h3>
             </div>
 
             <div class="artist">
-                <img src="images/orelsan.jpg">
+                <img src="images/orelsan.jpg" alt="Orelsan">
                 <h3>Orelsan</h3>
             </div>
 
             <div class="artist">
-                <img src="images/clara.jpg">
+                <img src="images/clara.jpg" alt="Clara Luciani">
                 <h3>Clara Luciani</h3>
             </div>
 
             <div class="artist">
-                <img src="images/damso.jpg">
+                <img src="images/damso.jpg" alt="Damso">
                 <h3>Damso</h3>
             </div>
+
         </div>
     </div>
 </section>
 
+<!-- GALERIE -->
 <section id="galerie" class="section colorful2">
     <div class="container">
-        <h2>📸 Galerie d’été</h2>
+        <h2>📸 Galerie</h2>
 
         <div class="gallery">
             <img src="images/concert1.jpg">
@@ -104,9 +105,11 @@
     </div>
 </section>
 
+<!-- BILLETTERIE -->
 <section id="tickets" class="section">
     <div class="container ticket">
         <h2>🎟️ Billetterie</h2>
+
         <div class="ticket-box">
             <h3>Pass 3 jours</h3>
             <p>Accès complet au festival</p>
@@ -117,7 +120,7 @@
 </section>
 
 <footer>
-    <p>© Francofolies - Projet étudiant EFAP</p>
+    <p>© 2026 Francofolies - Projet étudiant EFAP</p>
 </footer>
 
 </body>
