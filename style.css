@@ -1,62 +1,80 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: #f7f4f2;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    color: #333;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
-    text-align: center;
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('images/festival.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-h1 {
-    font-size: 50px;
-    color: #8b5e83;
-    margin-bottom: 10px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
 }
 
-.subtitle {
-    font-size: 20px;
-    color: #777;
-    margin-bottom: 30px;
+nav h1 {
+    font-size: 32px;
+    color: #ff8c42;
 }
 
-img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 30px;
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
-h2 {
-    color: #8b5e83;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #8b5e83;
+nav a {
     color: white;
     text-decoration: none;
-    border-radius: 10px;
     transition: 0.3s;
 }
 
-a:hover {
-    background-color: #6d4966;
-}}
+nav a:hover {
+    color: #ff8c42;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff8c42;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+}
