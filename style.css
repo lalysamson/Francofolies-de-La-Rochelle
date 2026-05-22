@@ -2,29 +2,38 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
 }
 
 body{
     background:#fff3e6;
+    color:#222;
 }
 
-/* NAV */
+/* NAV FIXE */
 .nav{
     position:fixed;
     top:0;
+    left:0;
     width:100%;
     display:flex;
     justify-content:space-between;
+    align-items:center;
     padding:15px 40px;
     background:#ff4d6d;
-    z-index:999;
+    z-index:1000;
+}
+
+.nav h1{
+    color:white;
+    font-size:22px;
 }
 
 .nav a{
     color:white;
     margin-left:15px;
     text-decoration:none;
+    font-weight:bold;
 }
 
 /* HERO VIDEO */
@@ -32,20 +41,39 @@ body{
     height:100vh;
     position:relative;
     overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
+/* vidéo en fond */
 .video-bg{
     position:absolute;
+    top:0;
+    left:0;
     width:100%;
     height:100%;
     object-fit:cover;
+    z-index:1;
 }
 
+/* filtre sombre sur vidéo */
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    z-index:2;
+}
+
+/* texte hero */
 .hero-content{
     position:relative;
-    z-index:2;
+    z-index:3;
     text-align:center;
-    top:40%;
     color:white;
 }
 
@@ -53,6 +81,12 @@ body{
     font-size:70px;
 }
 
+.hero p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* bouton */
 .btn{
     display:inline-block;
     margin-top:20px;
@@ -61,6 +95,7 @@ body{
     border-radius:30px;
     color:white;
     text-decoration:none;
+    font-weight:bold;
 }
 
 /* SECTIONS */
@@ -73,18 +108,23 @@ body{
     margin:auto;
 }
 
+/* TITRES */
 h2{
     text-align:center;
     margin-bottom:40px;
+    font-size:40px;
     color:#ff4d6d;
 }
 
 /* BLOCS */
-.card,.box,.artist,.ticket-box{
+.card,
+.box,
+.artist,
+.ticket-box{
     background:white;
     padding:20px;
     border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* GRIDS */
@@ -106,6 +146,14 @@ h2{
 .gallery img{
     width:100%;
     border-radius:15px;
+    display:block;
+}
+
+/* GALERIE */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
 }
 
 /* COULEURS */
@@ -117,16 +165,23 @@ h2{
     background:linear-gradient(135deg,#a1c4fd,#c2e9fb);
 }
 
-/* TICKET */
+/* TICKETS */
 .ticket{
     text-align:center;
+}
+
+.ticket-box{
+    display:inline-block;
 }
 
 .ticket-box span{
     font-size:40px;
     color:#ff4d6d;
+    display:block;
+    margin:20px 0;
 }
 
+/* bouton ticket */
 button{
     background:linear-gradient(45deg,#ff4d6d,#ffb703);
     border:none;
@@ -134,4 +189,14 @@ button{
     border-radius:30px;
     color:white;
     cursor:pointer;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ff4d6d;
+    color:white;
+    margin-top:50px;
 }
